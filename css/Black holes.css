@@ -1,0 +1,401 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.lang{
+    padding: 0px 3px;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(174, 174, 174);
+    position: fixed;
+    right: 10px;
+    top: 40px;
+    z-index: 99999999999999;
+}
+.none{
+    display: none;
+}
+.page-ar {
+  direction: rtl;
+}  
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.imges{
+    
+    width: 700px;
+    z-index: 22;
+    transform: translateY(30px);
+    filter: blur(30);
+    opacity: 0;
+    animation:showContenty 0.5s 0.7s ease-in-out 1 forwards ;
+}
+.imges img{
+    height: 300px;
+    width: 300px;
+
+}
+@keyframes showContentx{
+    to{
+        transform: translatex(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+@keyframes showContenty{
+    to{
+        transform: translatey(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+.bag1{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url();
+    color:white;
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.info_bag1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    z-index: 22;
+    width: 50%;
+   
+}
+.info_bag1 h1,.info_bag1 p
+{
+    transform: translateY(30px);
+    filter: blur(30);
+    opacity: 0;
+    animation:showContenty 0.5s 0.7s ease-in-out 1 forwards ;
+}
+.info_bag1 h1{
+    font-size: 40px;
+    color: orange;
+    transition: 0.5s ease;
+    margin-bottom: 30px;
+    border: solid 2px;
+
+}
+.info_bag1 h1:hover{
+    font-size: 50px;
+    color: brown;
+    background-color: orange;
+}
+
+.info_bag1 p {
+    line-height: 1.5;
+    font-size: 20px;
+    transition:0.5s ease;
+}
+.info_bag1 p:hover{
+font-size: 25px;
+color: orange;
+}
+.shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+/* =================================== */
+.bag2{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    animation:showContentx 0.5s 0.7s ease-in-out 1 forwards ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    transform: translatex(-100px);
+    filter: blur(30);
+    opacity: 0;
+}
+.bag2 .info_bag2{
+    width: 600px;
+    
+  
+}
+
+.bag2 img{
+    width: 400px;
+    height: 400px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.bag2 h1{
+    font-size: 40px;
+    color: orange;
+    transition: 0.5s ease;
+    margin-bottom: 30px;
+    border: solid 2px;
+}
+.bag2 h1:hover {
+    font-size: 50px;
+    color: brown;
+    background-color: orange;
+}
+
+.bag2 p {
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+.bag2 p:hover{
+    font-size: 25px;
+    color: orange;
+}
+
+/* ========================================= */
+.bag3{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url();
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    position: relative;
+    animation:showContenty 0.5s 0.7s ease-in-out 1 forwards ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    transform: translateY(100px);
+    filter: blur(30);
+    opacity: 0;
+}
+.bag3 .info_bag3{
+z-index: 22;
+width: 50%;
+
+}
+.bag3 h1 {
+    font-size: 30px;
+  color: orange;
+  transition: 0.5s ease;
+  margin-bottom: 30px;
+  border: solid 2px;
+}
+.bag3 h1:hover {
+    color: brown;
+    font-size: 40px;
+    background-color: orange;
+}
+.bag3 p {
+    font-size: 20px;
+    color: orange;
+    transition: 0.5s ease;
+
+}
+.bag3 p:hover{
+    color: brown;
+font-size: 25px;
+}
+/*============================ */
+.bag4{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    animation:showContentx 0.5s 0.7s ease-in-out 1 forwards ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    transform: translatex(100px);
+    filter: blur(30);
+    opacity: 0;
+}
+.bag4 image img{
+    width: 70px;
+    height: 50px;
+}
+.bag4 .info_bag4 {
+   width: 60%;
+}
+.bag4 .info_bag4 h1 {
+    font-size: 30px;
+  color: orange;
+  transition: 0.5s ease;
+  margin-bottom: 30px;
+  border: solid 2px;
+}
+.bag4 .info_bag4  h1:hover {
+    color: brown;
+    font-size: 40px;
+    background-color: orange;
+}
+.bag4 p {
+    font-size: 20px;
+    color: orange;
+    transition: 0.5s ease;
+
+}
+.bag4 p:hover{
+    color: brown;
+font-size: 25px;
+}
+
+
+/* ============================== */
+.bag5{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url();
+    background-size: cover;
+    background-attachment: fixed;
+    animation:showContenty 0.5s 0.7s ease-in-out 1 forwards ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    transform: translateY(100px);
+    filter: blur(30);
+    opacity: 0;
+}
+.bag5 .info_bag5 {
+    z-index: 22;
+}
+.bag5 h1 {
+    font-size: 30px;
+  color: orange;
+  transition: 0.5s ease;
+  margin-bottom: 30px;
+  border: solid 2px;
+}
+.bag5 h1:hover {
+    color: brown;
+    font-size: 40px;
+    background-color: orange;
+}
+.bag5 p {
+    font-size: 20px;
+    color: orange;
+    transition: 0.5s ease;
+
+}
+.bag5 p:hover{
+    color: brown;
+font-size: 25px;
+}
+/* ============================================ */
+.bag6{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.bag6 img{
+    height: 500px;
+    width: 600px;
+    animation:showContentx 0.5s 0.7s ease-in-out 1 forwards ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    transform: translatex(100px);
+    filter: blur(30);
+    opacity: 0;
+}
+.bag6 .info_bag6{
+    opacity: 0.5;
+    animation:showContentx 0.5s 0.7s ease-in-out 1 forwards ;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    transform: translatex(-100px);
+    filter: blur(30);
+    opacity: 0;
+}
+.bag6 .info_bag6:hover{
+    opacity: 1;
+}
+.bag6 .info_bag6 h1{
+    font-size: 30px;
+    border:solid 2px;
+    border-radius: 25px;
+    color: orange;
+    margin-right: 200px;
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+}
+.bag6 .info_bag6 h1:hover{
+    font-size:40px ;
+    color:brown ;
+    background-color: orange;
+}
+.bag6 .info_bag6 p{
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+.bag6 .info_bag6 p:hover{
+    font-size: 25px;
+    color: orange;
+}
+.footer{
+    background-color: #1a1a1a;
+    padding: 40px 10px;
+    position: relative;
+    margin-top: 100px;
+}
+.footer .content {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+.footer .content .logo{
+    color: white;
+    flex-basis: 30%;
+}
+.footer .content .logo h1{
+    text-align: left;
+}
+.footer .content .logo p{
+    font-size: 10px;
+    color: #d7d7d7;
+}
+.footer .content ul{
+    list-style: none;
+}
+.footer .content ul li a:hover{
+    text-shadow: 2px 2px 5px;
+}
+.footer .bottom{
+    position: absolute;
+    bottom: 6px;
+    left: 80px;
+    color: white;
+}
+.footer a{
+    color: #fff;
+}
+
+.fa-solid.fa-arrow-up{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    position: fixed;
+    right: -40px;
+    bottom: 20px;
+    transition: 0.2s;
+}
+i.fa-solid.fa-arrow-up.show{
+    right:10px;
+  
+  }

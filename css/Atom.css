@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-image:url("../photo/noura.png");
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden ;
+}
+
+.page-en{
+    direction: rtl;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.none{
+display: none;
+}
+
+.lang{
+    padding: 0px 3px;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(174, 174, 174);
+    position: fixed;
+    right: 10px;
+    top: 40px;
+    z-index: 99999999999999;
+}
+header {
+    margin: 20px 40px;
+    position:  fixed;
+    left: 30px;
+    z-index: 99999999999999;
+}
+header h1{
+    border: 1px solid;
+    border-radius: 6px;
+   font-size:24px ;
+   padding: 0 2px;
+   color: aliceblue;
+   display: inline;
+}
+
+.main-section {
+    background-image: url("../photo/atom-main.jpg");
+    background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height:100vh ;
+    position:relative ;
+    
+}
+.main-section .content{
+    position: absolute ;
+    top: 0;
+    left: 0;
+direction: rtl;
+    display: flex;
+  justify-content: right;
+  padding-right: 30px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.651);
+}
+.main-section .content .text {
+  width: 50%;
+  margin-right: 50px;  
+}
+.main-section .content .text h1 {
+    color: aliceblue;
+    width: fit-content;
+    font-size: 80px;
+    margin-bottom: 23px;
+    opacity: 100%!important;
+}
+.main-section .content .text p {
+    color: aliceblue;
+    font-size: 18px;
+    opacity: 100%!important;
+}
+
+
+
+.content-atom{
+    margin-top: 50px;
+}
+.content-atom .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-atom .content p{
+    color: aliceblue;
+    font-size: 20px;
+    width: 50%;
+    opacity: 100%!important;
+}
+.page-ar .content-atom .content p{
+    color: aliceblue;
+    font-size: 20px;
+    width: 50%;
+    text-align: right;
+    opacity: 100%!important;
+}
+.page-en .content-atom .content p{
+    color: aliceblue;
+    font-size: 20px;
+    width: 50%;
+    text-align: left;
+    opacity: 100%!important;
+}
+.content-atom .content img{
+    width:400px;
+    opacity: 100%!important;
+}
+
+.content-atom h1{
+color: aliceblue;
+font-size: 40px;
+text-align: center;
+margin-bottom: 40px;
+opacity: 100%!important;
+}
+
+.footer{
+    background-color: #1a1a1a;
+    padding: 40px 10px;
+    position: relative;
+    margin-top: 100px;
+    direction: ltr;
+}
+.footer .content {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+.footer .content .logo{
+    color: white;
+    flex-basis: 30%;
+}
+.footer .content .logo h1{
+    text-align: left;
+    opacity: 100%!important;
+}
+.footer .content .logo p{
+    font-size: 10px;
+    color: #d7d7d7;
+    opacity: 100%!important;
+}
+.footer .content ul{
+    list-style: none;
+}
+.footer .content ul li a:hover{
+    text-shadow: 2px 2px 5px;
+}
+.footer .bottom{
+    position: absolute;
+    bottom: 6px;
+    left: 80px;
+    color: white;
+}
+.fa-solid.fa-arrow-up{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    position: fixed;
+    right: -40px;
+    bottom: 20px;
+    transition: 0.2s;
+}
+i.fa-solid.fa-arrow-up.show{
+    right:10px;
+  
+  }

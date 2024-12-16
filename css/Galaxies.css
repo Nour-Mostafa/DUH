@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../photo/bac.home.jpg.jpg");
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+.page-ar{
+    direction: rtl;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.none{
+display: none;
+}
+
+.lang{
+    padding: 0px 3px;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(174, 174, 174);
+    position: fixed;
+    right: 10px;
+    top: 40px;
+    z-index: 99999999999999;
+}
+
+/* start header */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0 0 20px #e8e5e5;
+    h1 {
+        color: white;
+        letter-spacing: 4px;
+        animation: border 2s linear infinite;
+        transition: .5s;
+    }
+    h1:hover {
+        font-size: 50px;
+        letter-spacing: 10px;
+    }
+}
+
+
+/* end header */
+
+
+/* start content */
+
+.main-sec {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .head {
+        h1 {
+            padding: 100px;
+            font-size: 60px;
+            animation: color2 2.5s linear infinite;
+            transition: .5s;
+        }
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            max-width: 70%;
+            font-size: 20px;
+            line-height: 25px;
+            transition: .5s;
+        }
+        span {
+            font-weight: bold;
+            color: aqua;
+            font-size: 35px;
+            transition: .5s;
+        }
+        p:hover span {
+            color: white;
+        }
+        a {
+            width: 200px;
+            height: 35px;
+            /* background-color: black; */
+            background: linear-gradient(to right, #274a4a, black, #274a4a, black);
+            color: white;
+            margin-top: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #031414;
+            font-size: 20px;
+            transition: .5s;
+            text-decoration: none;
+            display: block;
+            animation: line 1s linear infinite
+        }
+    }
+    h1:hover {
+        color: aqua;
+        font-size: 65px;
+        animation: none;
+    }
+    p:hover {
+        padding-left: 10px;
+        color: aqua;
+    }
+    a:hover {
+        background-color: white;
+        /* color: black; */
+        font-size: 22px;
+    }
+}
+
+
+/* end content */
+
+
+/* =============================start containar */
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(310deg, black, black, #1a1a1a, black, black);
+    /* box-shadow: 0 0 30px wheat; */
+    margin: 0 10px;
+}
+
+.continer {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 10px;
+    transform-style: preserve-3d;
+}
+
+.continer .box {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 50px 20px;
+    /* background: rgb(255, 255, 255, .1); */
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 5px 20px rgb(0, 0, 0, 0.2); */
+    transition: height .5s ease-in-out;
+}
+
+.continer .box:hover {
+    height: 100%;
+}
+
+.continer .box .imgbx {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: initial;
+    width: 350px;
+    height: 260px;
+    border-radius: 6px;
+    /* overflow: hidden; */
+    z-index: 1;
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+.continer .box .imgbx img {
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+.continer .box .info {
+    position: relative;
+    padding: 10px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: translatey(-140px) scale(1);
+}
+
+.continer .box .info h2 {
+    font-weight: bold;
+    text-shadow: 0 0 5px aqua;
+    animation: bac 3s linear infinite;
+}
+
+h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-shadow: 0 0 5px aqua;
+    text-align: center;
+    animation: bac 2s linear infinite;
+}
+
+.continer .box:hover .info {
+    visibility: visible;
+    opacity: 1;
+    transform: translatey(-40px) scale(1);
+    color: white;
+}
+
+.continer .box:hover h4 {
+    display: none;
+}
+
+.continer .box:hover .imgbx {
+    top: 35px;
+    left: 230px;
+    right: 0;
+    transform: scale(.4);
+}
+
+.home .more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.home .more h2 {
+    text-shadow: 0 0 5px aqua;
+}
+
+.home .more p {
+    padding-top: 15px;
+    max-width: 80%;
+    font-size: 22px;
+}
+
+
+/* =========================================end containar */
+
+
+/* start gallary */
+
+.gallary {
+    height: 100vh;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 42px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .photos {
+        width: 85vw;
+        height: 500px;
+        display: flex;
+        gap: 5px;
+        margin: auto;
+        img {
+            height: 100%;
+            flex: 1;
+            object-fit: cover;
+            overflow: hidden;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all .3s;
+            filter: grayscale(1);
+        }
+        img:hover {
+            flex: 8;
+            filter: grayscale(0);
+        }
+    }
+}
+
+
+/* end gallary */
+
+
+/* start  animation */
+
+@keyframes color2 {
+    0% {
+        color: white;
+    }
+    25% {
+        color: aqua;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: aqua;
+    }
+}
+
+@keyframes border {
+    0% {
+        border-color: white transparent transparent transparent;
+        border-width: 2px;
+        border-style: solid;
+    }
+    25% {
+        border-color: transparent aqua transparent transparent;
+        border-width: 2px;
+        border-style: solid;
+    }
+    50% {
+        border-color: transparent transparent white transparent;
+        border-width: 2px;
+        border-style: solid;
+    }
+    75% {
+        border-color: transparent transparent transparent aqua;
+        border-width: 2px;
+        border-style: solid;
+    }
+}
+
+@keyframes bac {
+    0% {
+        text-shadow: 0 0 5px aqua;
+    }
+    25% {
+        text-shadow: 0 0 20px aqua;
+    }
+    75% {
+        text-shadow: 0 0 20px aqua;
+    }
+    100% {
+        text-shadow: 0 0 42px aqua;
+    }
+}
+
+@keyframes line {
+    100% {
+        background: linear-gradient(to left, #274a4a, black, #274a4a, black);
+    }
+}
+
+
+/* end  animation */
+
+.footer{
+    background-color: #1a1a1a;
+    padding: 40px 10px;
+    position: relative;
+}
+.footer .content {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+
+}
+.footer .content .logo{
+    color: white;
+    flex-basis: 30%;
+}
+.footer .content .logo h1{
+    text-align: left;
+}
+.footer .content .logo p{
+    font-size: 10px;
+    color: #d7d7d7;
+}
+.footer .content ul{
+    list-style: none;
+}
+.footer .content ul li a:hover{
+    text-shadow: 2px 2px 5px;
+}
+.footer .bottom{
+    position: absolute;
+    bottom: 6px;
+    left: 80px;
+    color: white;
+}
+
+
+.fa-solid.fa-arrow-up{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    position: fixed;
+    right: -40px;
+    bottom: 20px;
+    transition: 0.2s;
+}
+i.fa-solid.fa-arrow-up.show{
+    right:10px;
+  
+  }

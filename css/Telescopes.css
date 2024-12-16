@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.page-ar{
+    direction: rtl;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.none{
+display: none;
+}
+
+.lang{
+    padding: 0px 3px;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(174, 174, 174);
+    position: fixed;
+    right: 10px;
+    top: 40px;
+    z-index: 99999999999999;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+header {
+    /* border-bottom: 4px solid red; */
+    height: 62px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    h1 {
+        padding: 0 20px;
+        font-size: 45px;
+        animation: hidden 3s linear infinite;
+    }
+}
+
+
+/* =======start continer============== */
+
+.continer {
+    height: calc(100vh-62px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 25px;
+    padding-bottom: 15px;
+    background: linear-gradient(130deg, #051937, #051937, #051937, #051937, black, black, black, black);
+    .word {
+        padding-left: 15px;
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        font-size: 55px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 0 0 5px gold;
+    }
+    .text {
+        line-height: 30px;
+        max-width: 280px;
+        height: 80%;
+        font-size: 25px;
+        text-shadow: 0 0 5px gold;
+        animation: hidden2 2s linear infinite;
+    }
+    .special {
+        color: #ffffff;
+    }
+    .photo {
+        width: 300px;
+        height: 400px;
+        transition: .5s;
+        animation: move 5.5s linear infinite;
+        img {
+            width: 290px;
+            height: 390px;
+        }
+    }
+    .photo:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+/* =======end continer================/ */
+
+
+/* ========start big-box===============/ */
+
+.big-box {
+    text-align: center;
+    padding-top: 15px;
+    background: linear-gradient(to left, #02183c, #051937, black, black, black, black, black, black, black, black, #051937, #02183c);
+    h1 {
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        text-shadow: 0 0 5px gold;
+    }
+    .small-box {
+        width: 940px;
+        margin: auto;
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        .box {
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            h2 {
+                margin-top: 30px;
+                text-shadow: 0 0 2px gold;
+            }
+            img {
+                width: 300px;
+                border-radius: 15px;
+            }
+            img:hover {
+                box-shadow: 0 0 50px #051937;
+                transform: scale(.8);
+            }
+            a {
+                width: 180px;
+                height: 35px;
+                color: white;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                text-align: center;
+                border-radius: 8px;
+                border: 1px solid white;
+                font-size: 20px;
+                transition: .5s;
+                text-decoration: none;
+                display: block;
+                text-shadow: 0 0 5px gold;
+            }
+            a:hover {
+                background: linear-gradient(to right, blue, #051937, black);
+                border: none;
+            }
+        }
+    }
+}
+
+
+/* =======end big-box================/ */
+
+
+/* =======start types================/ */
+
+.types {
+    padding-top: 15px;
+    background: linear-gradient(285deg, #051937, black, black, #011533, #021d43, black, black, #011533, #011533, black, black, #02183c, #021940);
+    .type {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .word {
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase;
+            font-size: 55px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: 0 0 5px gold;
+            animation: hidden2 2s linear infinite;
+        }
+        p {
+            line-height: 30px;
+            max-width: 50%;
+            height: 80%;
+            font-size: 25px;
+            text-shadow: 0 0 5px gold;
+            animation: hidden2 2s linear infinite;
+        }
+    }
+}
+
+
+/* ==========end types=============/ */
+
+
+/* ========start parent===============/ */
+
+.parent {
+    background: linear-gradient(to left, #02183c, #051937, black, black, black, black, black, black, black, black, #051937, #02183c);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .child {
+        position: relative;
+        margin-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+        height: 390px;
+        border-radius: 14px;
+        .photo {
+            position: absolute;
+            transition: .5s;
+            z-index: -290;
+            animation: switch 5s linear infinite;
+            img {
+                border-radius: 12px;
+            }
+        }
+        p {
+            color: #acb1ba;
+            max-width: 85%;
+            font-size: 22px;
+            text-shadow: 0 0 5px gold;
+        }
+        .word {
+            position: absolute;
+            text-transform: uppercase;
+            text-shadow: 0 0 5px gold;
+            font-size: 35px;
+            animation: goo 4s linear infinite;
+        }
+        h3 {
+            position: absolute;
+            top: -40px;
+            border-radius: 8px;
+            text-shadow: 0 0 5px gold;
+            font-size: 25px;
+        }
+    }
+    .child:hover {
+        box-shadow: 0 0 40px #011533, 0 0 25px gold;
+    }
+    .child:hover .photo {
+        animation: none;
+    }
+}
+
+
+/* ========end parent===============/ */
+
+
+/* =========start animations==============/ */
+
+@keyframes hidden {
+    0% {
+        opacity: 10;
+        transform: scale(1.3);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hidden2 {
+    0% {
+        padding-left: 7px;
+    }
+    50% {
+        padding-left: 0;
+    }
+    100% {
+        padding-left: 7px;
+    }
+}
+
+@keyframes switch {
+    0% {
+        transform: scale(.9);
+    }
+    45% {
+        z-index: 29;
+        transform: scale(1);
+    }
+    100% {
+        z-index: 29;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes goo {
+    0% {
+        right: 800px;
+    }
+    100% {
+        left: 800px;
+    }
+}
+
+
+/* ==========end animations=============/ */
+.footer{
+    background-color: #1a1a1a;
+    padding: 40px 10px;
+    position: relative;
+}
+.footer .content {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+
+}
+.footer .content .logo{
+    color: white;
+    flex-basis: 30%;
+}
+.footer .content .logo h1{
+    text-align: left;
+}
+.footer .content .logo p{
+    font-size: 10px;
+    color: #d7d7d7;
+}
+.footer .content ul{
+    list-style: none;
+}
+.footer .content ul li a:hover{
+    text-shadow: 2px 2px 5px;
+}
+.footer .bottom{
+    position: absolute;
+    bottom: 6px;
+    left: 80px;
+    color: white;
+}
+.fa-solid.fa-arrow-up{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    position: fixed;
+    right: -40px;
+    bottom: 20px;
+    transition: 0.2s;
+}
+i.fa-solid.fa-arrow-up.show{
+    right:10px;
+  
+  }
